@@ -25,6 +25,12 @@ public class Controller implements Initializable {
     @FXML private Button Minus;
     @FXML private Button Equals;
     @FXML private Button CC;
+    
+    Double firstNum;
+    Double secondNum;
+    Double result;
+    String Operation;
+    String Answer;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -68,9 +74,16 @@ public class Controller implements Initializable {
         });
         Plus.setOnAction(event ->{
             //here the code of what this number will do if you press it
+            firstNum = double.parseDouble(txtDisplay.getText());
+            txtDisplay.setTExt(“”);
+            Operation = “+”;
         });
         Minus.setOnAction(event ->{
             //here the code of what this number will do if you press it
+            firstNum = double.parseDouble(txtDisplay.getText());
+            txtDisplay.setTExt(“”);
+            Operation = “-”;
+
         });
         Equals.setOnAction(event ->{
             //here the code of what this number will do if you press it
