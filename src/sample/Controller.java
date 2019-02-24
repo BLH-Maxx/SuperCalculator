@@ -36,35 +36,55 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         Number0.setOnAction(event ->{
-            //here the code of what this number will do if you press it
+            String text = displayNumber.getText();
+            text = text +0;
+            displayNumber.setText(text);
         });
         Number1.setOnAction(event ->{
-            //here the code of what this number will do if you press it
+            String text = displayNumber.getText();
+            text = text +"1";
+            displayNumber.setText(text);
         });
         Number2.setOnAction(event ->{
-            //here the code of what this number will do if you press it
+            String text = displayNumber.getText();
+            text = text +"2";
+            displayNumber.setText(text);
         });
         Number3.setOnAction(event ->{
-            //here the code of what this number will do if you press it
+              String text = displayNumber.getText();
+            text = text +"3";
+            displayNumber.setText(text);
         });
         Number4.setOnAction(event ->{
-            //here the code of what this number will do if you press it
+              String text = displayNumber.getText();
+            text = text +"4";
+            displayNumber.setText(text);
         });
         Number5.setOnAction(event ->{
-            //here the code of what this number will do if you press it
+              String text = displayNumber.getText();
+            text = text +"5";
+            displayNumber.setText(text);
         });
         Number6.setOnAction(event ->{
-            //here the code of what this number will do if you press it
+              String text = displayNumber.getText();
+            text = text +"6";
+            displayNumber.setText(text);
         });
 
         Number7.setOnAction(event ->{
-            //here the code of what this number will do if you press it
+              String text = displayNumber.getText();
+            text = text +"7";
+            displayNumber.setText(text);
         });
         Number8.setOnAction(event ->{
-            //here the code of what this number will do if you press it
+              String text = displayNumber.getText();
+            text = text +"8";
+            displayNumber.setText(text);
         });
         Number9.setOnAction(event ->{
-            //here the code of what this number will do if you press it
+              String text = displayNumber.getText();
+            text = text +"9";
+            displayNumber.setText(text);
         });
         Slash.setOnAction(event ->{
             //here the code of what this number will do if you press it
