@@ -10,37 +10,37 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f96ff32" height="40.0" layoutX="54.0" layoutY="94.0" stroke="BLACK" strokeType="INSIDE" width="290.0" />
       <VBox alignment="CENTER_RIGHT" layoutX="54.0" layoutY="94.0" prefHeight="40.0" prefWidth="290.0">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0.0" textAlignment="RIGHT">
+            <Text fx:id="displayNumber" strokeType="OUTSIDE" strokeWidth="0.0" text="" textAlignment="RIGHT">
                <font>
                   <Font name="Bodoni MT Bold" size="32.0" />
                </font>
             </Text>
          </children>
       </VBox>
-      <Button fx:id = "Number8" layoutX="127.0" layoutY="174.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="8" />
-      <Button fx:id = "Number7" layoutX="54.0" layoutY="174.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="7" />
-      <Button fx:id = "Number9" layoutX="199.0" layoutY="174.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="9" />
-      <Button fx:id = "Star" layoutX="279.0" layoutY="174.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="*" />
-      <Button fx:id = "Slash" layoutX="280.0" layoutY="233.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="/" />
-      <Button fx:id = "Number6" layoutX="200.0" layoutY="233.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="6" />
-      <Button fx:id = "Number4" layoutX="55.0" layoutY="233.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="4" />
-      <Button fx:id = "Number5" layoutX="128.0" layoutY="233.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="5" />
-      <Button fx:id = "Plus" layoutX="280.0" layoutY="289.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="+" />
-      <Button fx:id = "Number3" layoutX="200.0" layoutY="289.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="3" />
-      <Button fx:id = "Number1" layoutX="55.0" layoutY="289.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="1" />
-      <Button fx:id = "Number2" layoutX="128.0" layoutY="289.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="2" />
-      <Button fx:id = "Number0" layoutX="127.0" layoutY="344.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="0" />
+      <Button fx:id="Number8" layoutX="127.0" layoutY="174.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="8" />
+      <Button fx:id="Number7" layoutX="54.0" layoutY="174.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="7" />
+      <Button fx:id="Number9" layoutX="199.0" layoutY="174.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="9" />
+      <Button fx:id="Star" layoutX="279.0" layoutY="174.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="*" />
+      <Button fx:id="Slash" layoutX="280.0" layoutY="233.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="/" />
+      <Button fx:id="Number6" layoutX="200.0" layoutY="233.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="6" />
+      <Button fx:id="Number4" layoutX="55.0" layoutY="233.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="4" />
+      <Button fx:id="Number5" layoutX="128.0" layoutY="233.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="5" />
+      <Button fx:id="Plus" layoutX="280.0" layoutY="289.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="+" />
+      <Button fx:id="Number3" layoutX="200.0" layoutY="289.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="3" />
+      <Button fx:id="Number1" layoutX="55.0" layoutY="289.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="1" />
+      <Button fx:id="Number2" layoutX="128.0" layoutY="289.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="2" />
+      <Button fx:id="Number0" layoutX="127.0" layoutY="344.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="0" />
       <Button layoutX="54.0" layoutY="344.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" />
-      <Button fx:id = "CC" layoutX="199.0" layoutY="344.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="CC" />
-      <Button fx:id = "Minus" layoutX="279.0" layoutY="344.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="-" />
+      <Button fx:id="CC" layoutX="199.0" layoutY="344.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="CC" />
+      <Button fx:id="Minus" layoutX="279.0" layoutY="344.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="-" />
       <Button layoutX="128.0" layoutY="398.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="Button" />
       <Button layoutX="55.0" layoutY="398.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="Button" />
       <Button layoutX="200.0" layoutY="398.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="Button" />
-      <Button fx:id = "Equals" layoutX="280.0" layoutY="398.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="=" />
+      <Button fx:id="Equals" layoutX="280.0" layoutY="398.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="65.0" text="=" />
    </children>
 </AnchorPane>
